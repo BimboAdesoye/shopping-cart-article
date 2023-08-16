@@ -69,12 +69,10 @@ function App() {
     setCartItems(cartItems.filter((oneItem) => oneItem.id !== product.id));
   };
 
-  // Total price function
-
   return (
     <>
       <BrowserRouter>
-        <Navbar />
+        <Navbar cartItems={cartItems} />
         <Routes>
           <Route
             path="/"
@@ -88,7 +86,6 @@ function App() {
                 handleIncrease={handleIncrease}
                 handleDecrease={handleDecrease}
                 handleRemoveItem={handleRemoveItem}
-                // totalPrice={itemsPrice}
               />
             }
           />

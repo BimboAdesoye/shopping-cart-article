@@ -15,6 +15,8 @@ body {
   margin: 0 auto;
 }
 
+/* Navbar */
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -34,6 +36,26 @@ body {
   margin-top: 1.5rem;
   border-radius: 10px;
   padding: 1.5rem;
+}
+
+.cart-link {
+  text-decoration: none;
+}
+
+.cart-icon {
+  position: relative;
+}
+
+.cart-icon p {
+  background-color: #db9200;
+  border-radius: 50%;
+  color: black;
+  font-weight: bold;
+  position: absolute;
+  right: -3px;
+  text-align: center;
+  top: -5px;
+  width: 20px;
 }
 
 /* Home */
@@ -186,6 +208,7 @@ body {
   font-size: 17px;
   font-style: normal;
   font-weight: 600;
+  cursor: pointer;
 }
 
 .cart-item-price {
